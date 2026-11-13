@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collections | Moda Luxe PH</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f3eb;
+    color: #493b30;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+header {
+    padding: 25px 8%;
+    text-align: center;
+    background: #f4eee4;
+    border-bottom: 1px solid #dfcdb5;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: #9b774b;
+    text-shadow: 0 0 12px #e7cda3;
+}
+
+header p {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-top: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 18px;
+    background: #eee5d8;
+}
+
+nav a {
+    color: #554333;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #b18a54;
+    text-shadow: 0 0 10px #d9b77f;
+}
+
+.hero {
+    text-align: center;
+    padding: 85px 20px 65px;
+    background: linear-gradient(135deg, #f8f2e9, #eadcc9, #f8f2e9);
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #8c6b46;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.collection {
+    padding: 65px 8%;
+}
+
+.brand {
+    margin-bottom: 100px;
+    animation: fadeIn 1s ease;
+}
+
+.brand-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.brand-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 39px;
+    letter-spacing: 5px;
+    color: #97734b;
+    text-shadow: 0 0 12px rgba(202,169,119,.4);
+}
+
+.brand-title p {
+    font-size: 17px;
+    margin-top: 8px;
+    letter-spacing: 2px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 260px;
+    gap: 16px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: .5s ease;
+    filter: brightness(.96);
+}
+
+.gallery img:hover {
+    transform: scale(1.025);
+    filter: brightness(1.08);
+    box-shadow: 0 8px 25px rgba(125,91,51,.2);
+}
+
+.gallery img:first-child {
+    grid-row: span 2;
+}
+
+.brand-divider {
+    width: 90px;
+    height: 1px;
+    background: #bd9b6d;
+    margin: 30px auto 0;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #eee5d8;
+    color: #80694e;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 700px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 190px;
+    }
+
+    .gallery img:first-child {
+        grid-row: span 1;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .brand-title h2 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MODA LUXE PH</div>
+    <p>THE ART OF TIMELESS ELEGANCE</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About Us</a>
+    <a href="collection.html">Collection</a>
+    <a href="index.html#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>THE COLLECTION</h1>
+    <p>A WORLD OF ICONIC LUXURY</p>
+</section>
+
+<main class="collection">
+
+<!-- CHANEL -->
+<section class="brand">
+<div class="brand-title">
+<h2>CHANEL</h2>
+<p>Elegance that never goes out of style.</p>
+</div>
+<div class="gallery">
+<img src="images/chanel1.jpg">
+<img src="images/chanel2.jpg">
+<img src="images/chanel3.jpg">
+<img src="images/chanel4.jpg">
+<img src="images/chanel5.jpg">
+</div>
+<div class="brand-divider"></div>
+</section>
+
+<!-- GUCCI -->
+<section class="brand">
+<div class="brand-title">
+<h2>GUCCI</h2>
+<p>Italian craftsmanship with a bold identity.</p>
+</div>
+<div class="gallery">
+<img src="images/gucci1.jpg">
+<img src="images/gucci2.jpg">
+<img src="images/gucci3.jpg">
+<img src="images/gucci4.jpg">
+<img src="images/gucci5.jpg">
+</div>
+<div class="brand-divider"></div>
+</section>
+
+<!-- YSL -->
+<section class="brand">
+<div class="brand-title">
+<h2>SAINT LAURENT</h2>
+<p>Modern sophistication and timeless silhouettes.</p>
+</div>
+<div class="gallery">
+<img src="images/ysl1.jpg">
+<img src="images/ysl2.jpg">
+<img src="images/ysl3.jpg">
+<img src="images/ysl4.jpg">
+<img src="images/ysl5.jpg">
+</div>
+<div class="brand-divider"></div>
+</section>
+
+<!-- BALENCIAGA -->
+<section class="brand">
+<div class="brand-title">
+<h2>BALENCIAGA</h2>
+<p>Distinctive designs with contemporary attitude.</p>
+</div>
+<div class="gallery">
+<img src="images/balenciaga1.jpg">
+<img src="images/balenciaga2.jpg">
+<img src="images/balenciaga3.jpg">
+<img src="images/balenciaga4.jpg">
+<img src="images/balenciaga5.jpg">
+</div>
+<div class="brand-divider"></div>
+</section>
+
+<!-- BURBERRY -->
+<section class="brand">
+<div class="brand-title">
+<h2>BURBERRY</h2>
+<p>British heritage meets refined luxury.</p>
+</div>
+<div class="gallery">
+<img src="images/burberry1.jpg">
+<img src="images/burberry2.jpg">
+<img src="images/burberry3.jpg">
+<img src="images/burberry4.jpg">
+<img src="images/burberry5.jpg">
+</div>
+<div class="brand-divider"></div>
+</section>
+
+<!-- DIOR BAGS -->
+<section class="brand">
+<div class="brand-title">
+<h2>DIOR BAGS</h2>
+<p>Graceful details and unmistakable elegance.</p>
+</div>
+<div class="gallery">
+<img src="images/diorbag1.jpg">
+<img src="images/diorbag2.jpg">
+<img src="images/diorbag3.jpg">
+<img src="images/diorbag4.jpg">
+<img src="images/diorbag5.jpg">
+</div>
+<div class="brand-divider"></div>
+</section>
+
+<!-- DIOR -->
+<section class="brand">
+<div class="brand-title">
+<h2>DIOR</h2>
+<p>Where beauty meets timeless artistry.</p>
+</div>
+<div class="gallery">
+<img src="images/dior1.jpg">
+<img src="images/dior2.jpg">
+<img src="images/dior3.jpg">
+<img src="images/dior4.jpg">
+<img src="images/dior5.jpg">
+</div>
+<div class="brand-divider"></div>
+</section>
+
+<!-- LOEWE -->
+<section class="brand">
+<div class="brand-title">
+<h2>LOEWE</h2>
+<p>Artistic expression and exceptional leatherwork.</p>
+</div>
+<div class="gallery">
+<img src="images/loewe1.jpg">
+<img src="images/loewe2.jpg">
+<img src="images/loewe3.jpg">
+<img src="images/loewe4.jpg">
+<img src="images/loewe5.jpg">
+</div>
+<div class="brand-divider"></div>
+</section>
+
+<!-- GOYARD -->
+<section class="brand">
+<div class="brand-title">
+<h2>GOYARD</h2>
+<p>Exclusive heritage and unmistakable patterns.</p>
+</div>
+<div class="gallery">
+<img src="images/goyard1.jpg">
+<img src="images/goyard2.jpg">
+<img src="images/goyard3.jpg">
+<img src="images/goyard4.jpg">
+<img src="images/goyard5.jpg">
+</div>
+</section>
+
+</main>
+
+<footer>
+© 2026 MODA LUXE PH | ALL RIGHTS RESERVED
+</footer>
+
+</body>
+</html>
